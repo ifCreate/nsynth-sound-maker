@@ -5,6 +5,9 @@
   "main": "index.html",
   "author": "Yotam Mann",
   "license": "Apache-2.0",
+  "scripts": {
+    "build": "webpack -p"
+  },
   "dependencies": {
     "autoprefixer-loader": "^3.2.0",
     "babel-core": "^6.24.1",
