@@ -8,7 +8,7 @@
 	border-style: solid;
 	border-color: $gray; */
 	position: absolute;
-	bottom: $keyboardHeight;
+	top: $waveformTop;
 
 	canvas {
 		width: 100%;

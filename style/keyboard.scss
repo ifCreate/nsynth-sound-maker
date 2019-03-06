@@ -1,7 +1,7 @@
 @import "common.scss";
 
 $borderWidth : 2px;
-$hoverColor : lighten($gray, 10%);
+$hoverColor : rgb(84, 84, 104);
 
 @keyframes attackDecay {
 	0% {
@@ -68,7 +68,7 @@ $hoverColor : lighten($gray, 10%);
 			z-index: 0;
 			cursor: pointer;
 			background-color: $backgroundColor;
-
+			
 			&.accidental {
 				z-index: 1;
 				height: 50%;
@@ -92,14 +92,19 @@ $hoverColor : lighten($gray, 10%);
 
 		.key {
 			background-color: $backgroundColor;
-			border-color: $gray;
+			border-color: $keyBordercolor;
 
 			&:hover {
 				background-color: $hoverColor;
 			}
-
+			&.natural {
+				background-color: $naturalcolor;
+				&:hover {
+					background-color: $hoverColor;
+				}
+			}
 			&.active {
-				background-color: $purpleHighlight;
+				// background-color: $purpleHighlight;
 			}
 		}
 	}

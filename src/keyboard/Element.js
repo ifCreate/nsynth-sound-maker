@@ -55,6 +55,8 @@ class KeyboardElement extends events.EventEmitter {
 		for (let i = lowest; i < lowest + octaves * 12; i++){
 			let key = document.createElement('div')
 			key.classList.add('key')
+			//添加bg class
+			key.classList.add('commonKeybg')
 			let isSharp = ([1, 3, 6, 8, 10].indexOf(i % 12) !== -1)
 			key.classList.add(isSharp ? 'accidental' : 'natural')
 			this._container.appendChild(key)

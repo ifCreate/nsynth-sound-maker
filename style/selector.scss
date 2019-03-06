@@ -13,7 +13,8 @@
 
 	@media (min-height : $heightCrossOver){
 		$topMargin: 40px;
-		top: $topMargin;
+		// top: $topMargin;
+		top: 140px;
 		height: calc(100% - #{$keyboardHeight + $waveformHeight + $topMargin});
 	}
 	position: absolute;
